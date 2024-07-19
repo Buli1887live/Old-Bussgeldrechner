@@ -48,6 +48,7 @@ function startCalculating() {
     let reasonText = ""
     let plate = document.getElementById("plateInput_input").value
     let blitzerort = document.getElementById("blitzerInput_input").value
+    let systemwanteds = document.getElementById("systemwantedsInput_input").value
 
     let infoResult = document.getElementById("infoResult")
     let noticeText = ""
