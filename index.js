@@ -223,7 +223,7 @@ function startCalculating() {
 
     if (systemwanteds != "") {
         reasonText += ` + ${systemwanteds} Systemwanteds`
-	    if (Systemwanteds > 5) Systemwanteds = 5
+	    if (systemwanteds > 5) systemwanteds = 5
     }
 
        if (!isNaN(systemwanteds) && systemwanteds !== "") {
