@@ -225,7 +225,10 @@ function startCalculating() {
         reasonText += ` + ${systemwanteds} Systemwanteds`
     }
 
- 
+    if (!isNaN(systemwanteds) && systemwanteds !== "") {
+      
+        if (wantedAmount > 5) wantedAmount = 5
+    }
 
     if (document.getElementById("systemfehler_box").checked) {
         reasonText += ` - Systemfehler`
