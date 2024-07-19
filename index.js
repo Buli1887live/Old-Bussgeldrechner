@@ -223,10 +223,11 @@ function startCalculating() {
 
     if (systemwanteds != "") {
         reasonText += ` + ${systemwanteds} Systemwanteds`
+	    if (Systemwanteds > 5) Systemwanteds = 5
     }
 
-    if (!isNaN(systemwanteds) && systemwanteds !== "") {
-      
+       if (!isNaN(systemwanteds) && systemwanteds !== "") {
+        wantedAmount = wantedAmount + parseInt(systemwanteds)
         if (wantedAmount > 5) wantedAmount = 5
     }
 
